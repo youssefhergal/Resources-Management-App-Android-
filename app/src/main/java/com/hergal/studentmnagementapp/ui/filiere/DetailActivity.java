@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp;
+package com.hergal.studentmnagementapp.ui.filiere;
 
 
 
@@ -9,9 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionButton;
+import com.hergal.studentmnagementapp.R;
+import com.hergal.studentmnagementapp.ui.home.UpdateActivity;
 
 public class DetailActivity extends AppCompatActivity {
 

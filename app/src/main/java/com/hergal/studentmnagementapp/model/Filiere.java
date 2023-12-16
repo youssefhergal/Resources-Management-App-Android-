@@ -3,18 +3,49 @@ package com.hergal.studentmnagementapp.model;
 
 
 public class Filiere {
+
+
     private int id;
-    private String nom;
-
     private String code;
-
+    private String nom;
     private String description;
+    private byte[] image;
+    private Professeur coordonnateur;
 
-    public Filiere(int id, String nom, String code , String description) {
+    public Filiere(int id, String code, String nom, String description, byte[] image, Professeur coordonnateur) {
         this.id = id;
-        this.nom = nom;
         this.code = code;
+        this.nom = nom;
         this.description = description;
+        this.image = image;
+        this.coordonnateur = coordonnateur;
+    }
+
+    public Filiere(String code, String nom, String description, byte[] image, Professeur coordonnateur) {
+        this.code = code;
+        this.nom = nom;
+        this.description = description;
+        this.image = image;
+        this.coordonnateur = coordonnateur;
+    }
+
+    public Filiere(int id, String code, String nom, String description, byte[] image, int i) {
+    }
+
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
+    }
+
+    public Professeur getCoordonnateur() {
+        return coordonnateur;
+    }
+
+    public void setCoordonnateur(Professeur coordonnateur) {
+        this.coordonnateur = coordonnateur;
     }
 
     public Filiere() {

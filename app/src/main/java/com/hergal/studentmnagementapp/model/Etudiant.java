@@ -1,32 +1,34 @@
 package com.hergal.studentmnagementapp.model;
 
 
+import java.util.Date;
+
 public class Etudiant extends User {
-    private String numeroEtudiant;
-    private int idFiliere; // Référence vers la filière à laquelle l'étudiant est inscrit
+    private String  date_inscriptiopn;
+    private String filiere;
 
-    public String getNumeroEtudiant() {
-        return numeroEtudiant;
+    public String getDate_inscriptiopn() {
+        return date_inscriptiopn;
     }
 
-    public void setNumeroEtudiant(String numeroEtudiant) {
-        this.numeroEtudiant = numeroEtudiant;
+    public void setDate_inscriptiopn(String date_inscriptiopn) {
+        this.date_inscriptiopn = date_inscriptiopn;
     }
 
-    public int getIdFiliere() {
-        return idFiliere;
+    public String getFiliere() {
+        return filiere;
     }
 
-    public void setIdFiliere(int idFiliere) {
-        this.idFiliere = idFiliere;
+    public void setFiliere(String filiere) {
+        this.filiere = filiere;
     }
 
-    public Etudiant(int id, String nom, String prenom, String identifiant, String motDePasse,
-                    String numeroEtudiant, int idFiliere) {
-        super(id, nom, prenom, "Etudiant", identifiant, motDePasse);
-        this.numeroEtudiant = numeroEtudiant;
-        this.idFiliere = idFiliere;
+    public Etudiant() {
     }
 
-    // Autres méthodes si nécessaire
+    public Etudiant(int id, String nom, String prenom,  String email, int image, String date_inscriptiopn, String filiere) {
+        super(id, nom, prenom, email, image);
+        this.date_inscriptiopn = date_inscriptiopn;
+        this.filiere = filiere;
+    }
 }

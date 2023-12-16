@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp;
+package com.hergal.studentmnagementapp.ui.home;
 
 
 
@@ -6,8 +6,6 @@ import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -21,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.hergal.studentmnagementapp.R;
 
 
 public class UpdateActivity extends AppCompatActivity {
@@ -28,7 +27,7 @@ public class UpdateActivity extends AppCompatActivity {
     ImageView updateImage;
     Button updateButton;
     EditText updateDesc, updateTitle, updateCode;
-    String title, desc, lang;
+    String title, desc, code;
     String imageUrl;
     String key, oldImageURL;
     Uri uri;

@@ -9,11 +9,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.home.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,25 +23,43 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".ui.auth.LoginActivity">
 
         </activity>
 
-        <activity android:name=".DashboardActivity">
+        <activity android:name=".ui.home.DashboardActivity">
 
         </activity>
 
-        <activity  android:name=".ListActivity">
+        <activity  android:name=".ui.filiere.ListActivity">
 
         </activity>
 
-        <activity android:name=".DetailActivity">
+        <activity android:name=".ui.filiere.DetailActivity">
 
         </activity>
-        <activity android:name=".UpdateActivity">
+        <activity android:name=".ui.home.UpdateActivity">
 
         </activity>
 
+        <activity android:name=".ui.filiere.AjouterFiliereActivity">
+
+        </activity>
+
+        <activity android:name=".StudentActivity">
+
+        </activity>
+
+        <activity android:name=".StudentProfileActivity">
+
+        </activity>
+
+        <activity android:name=".UpdateProfileActivity">
+
+        </activity>
     </application>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

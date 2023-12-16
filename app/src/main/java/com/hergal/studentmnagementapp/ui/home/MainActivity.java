@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp;
+package com.hergal.studentmnagementapp.ui.home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,9 +8,11 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-import com.hergal.studentmnagementapp.dao.DatabaseHelper;
+import com.hergal.studentmnagementapp.R;
 import com.hergal.studentmnagementapp.dao.UserDao;
 import com.hergal.studentmnagementapp.model.User;
+import com.hergal.studentmnagementapp.ui.auth.LoginActivity;
+import com.hergal.studentmnagementapp.ui.auth.SessionManager;
 
 public class MainActivity extends AppCompatActivity {
 

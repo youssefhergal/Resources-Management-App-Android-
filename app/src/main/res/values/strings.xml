@@ -11,6 +11,10 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="code">Code</string>
-
+    <string-array name="filiere_options">
+        <item>Wisd</item>
+        <item>Mql</item>
+        <item>Bdsas</item>
+    </string-array>
 
 </resources>

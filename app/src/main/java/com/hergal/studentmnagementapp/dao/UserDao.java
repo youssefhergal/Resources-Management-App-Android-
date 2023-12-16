@@ -21,7 +21,7 @@ public class UserDao {
     public long addUser(User user) {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(DatabaseHelper.COLUMN_USERNAME, user.getUsername());
+        values.put(DatabaseHelper.COLUMN_USERNAME, user.getNom());
         values.put(DatabaseHelper.COLUMN_PASSWORD, user.getPassword());
         long result = db.insert(DatabaseHelper.TABLE_USERS, null, values);
         db.close();

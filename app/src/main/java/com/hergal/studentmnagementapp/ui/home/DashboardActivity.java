@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp;
+package com.hergal.studentmnagementapp.ui.home;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -6,6 +6,10 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.hergal.studentmnagementapp.ui.filiere.ListActivity;
+import com.hergal.studentmnagementapp.R;
+import com.hergal.studentmnagementapp.StudentActivity;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -28,7 +32,7 @@ public class DashboardActivity extends AppCompatActivity {
         etudiantcard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DashboardActivity.this, ListActivity.class);
+                Intent intent = new Intent(DashboardActivity.this, StudentActivity.class);
                 startActivity(intent);
             }
         });

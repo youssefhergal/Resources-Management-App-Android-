@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp;
+package com.hergal.studentmnagementapp.ui.auth;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.hergal.studentmnagementapp.R;
 import com.hergal.studentmnagementapp.dao.UserDao;
+import com.hergal.studentmnagementapp.ui.home.DashboardActivity;
 
 public class LoginActivity extends AppCompatActivity {
 

@@ -4,33 +4,36 @@ public class User {
     private int id;
     private String nom;
     private String prenom;
-    private String role; // Peut être "Etudiant" ou "Professeur"
-    private String username; // Un identifiant unique pour l'utilisateur
+    private String email ;
     private String password;
+
+    private int image ;
 
     public User() {
     }
 
-    public User(String nom, String prenom, String role, String identifiant, String motDePasse) {
-        this.nom = nom;
-        this.prenom = prenom;
-        this.role = role;
-        this.username = identifiant;
-        this.password = motDePasse;
-    }
 
-    public User(int id, String nom, String prenom, String role, String identifiant, String motDePasse) {
+    public User(int id, String nom, String prenom, String email, String password, int image) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
-        this.role = role;
-        this.username = identifiant;
-        this.password = motDePasse;
+
+        this.email = email;
+        this.password = password;
+        this.image = image;
     }
 
-    public User(String username, String password) {
-        this.username = username;
+    public User(String email, String password) {
+        this.email = email;
         this.password = password;
+    }
+
+    public User(int id, String nom, String prenom,  String email, int image) {
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+        this.image = image;
     }
 
     public int getId() {
@@ -57,22 +60,20 @@ public class User {
         this.prenom = prenom;
     }
 
-    public String getRole() {
-        return role;
+
+    public String getEmail() {
+        return email;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getImage() {
+        return image;
     }
 
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
     public String getPassword() {
         return password;

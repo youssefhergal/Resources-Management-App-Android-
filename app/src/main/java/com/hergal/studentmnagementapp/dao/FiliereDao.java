@@ -1,37 +1,43 @@
 package com.hergal.studentmnagementapp.dao;
 
-
-
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
+import com.hergal.studentmnagementapp.dao.ApiService;
 import com.hergal.studentmnagementapp.model.Filiere;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class FiliereDao {
 
-    private DatabaseHelper dbHelper;
+    private ApiService apiService;
 
-    public FiliereDao(Context context) {
-        dbHelper = new DatabaseHelper(context);
+    public FiliereDao() {
+        // Définissez l'URL de votre API
+        String apiUrl = "http://localhost:8082";
+
+        // Initialisez Retrofit
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(apiUrl)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        // Créez une instance de ApiService
+        apiService = retrofit.create(ApiService.class);
     }
 
-    // Méthode pour ajouter une filière à la base de données
-    public long addFiliere(Filiere filiere) {
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put(DatabaseHelper.COLUMN_NOM_FILIERE, filiere.getNom());
-        long result = db.insert(DatabaseHelper.TABLE_FILIERES, null, values);
-        db.close();
-        return result;
+    // Méthode pour récupérer toutes les filières de l'API distante
+    public void getAllFilieres(Callback<List<Filiere>> callback) {
+        Call<List<Filiere>> call = apiService.getAllFilieres();
+        call.enqueue(callback);
     }
 
-    // Méthode pour récupérer toutes les filières de la base de données
-    public Cursor getAllFilieres() {
-        SQLiteDatabase db = dbHelper.getReadableDatabase();
-        String[] columns = {DatabaseHelper.COLUMN_NOM_FILIERE};
-        return db.query(DatabaseHelper.TABLE_FILIERES, columns, null, null,
-                null, null, null);
+    public void addFiliere(Filiere filiere, Callback<Void> callback) {
+        Call<Void> call = apiService.addFiliere(filiere);
+        call.enqueue(callback);
     }
 
 }

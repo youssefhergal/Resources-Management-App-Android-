@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp;
+package com.hergal.studentmnagementapp.ui.filiere;
 
 
 
@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -17,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.hergal.studentmnagementapp.R;
 import com.hergal.studentmnagementapp.model.Filiere;
 
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
@@ -58,6 +58,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
                 intent.putExtra("Title", dataList.get(holder.getAdapterPosition()).getNom());
                 intent.putExtra("Desc", dataList.get(holder.getAdapterPosition()).getDescription());
+                intent.putExtra("Code", dataList.get(holder.getAdapterPosition()).getCode());
+                intent.putExtra("Image",dataList.get(holder.getAdapterPosition()).getImage());
 
                 context.startActivity(intent);
             }
