@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.filiere.AjouterFiliereActivity">
+    tools:context=".ui.student.AjouterStudentActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
         app:cardCornerRadius="30dp"
@@ -19,7 +19,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="696dp"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/lavender_border"
             android:orientation="vertical"
@@ -28,131 +28,121 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ajouter Filiere"
-                android:textColor="@color/bleu"
+                android:text="Ajouter Etudiant"
                 android:textAlignment="center"
-                android:layout_marginTop="20sp"
+                android:textColor="@color/lavender"
                 android:textSize="30sp" />
 
-
+            <ImageView
+                android:id="@+id/profileImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/design"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Enter votre nom"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:textColor="@color/rouge"
-                android:text="Entre le Code"
-                />
+                android:layout_marginTop="30dp"
+                android:textColor="@color/lavender" />
 
             <EditText
-                android:id="@+id/CodeFiliere"
+                android:id="@+id/LastName"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="0dp"
-                android:background="@drawable/lavendar_border2"
+                android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
-                android:hint="Code"
-                android:paddingLeft="15dp"
-                />
-
+                android:hint="Nom"
+                android:paddingLeft="16dp"
+                android:textColor="@color/lavender" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Enter votre prenom"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/rouge"
-                android:text="Entrer l'intitule"
-                />
+                android:textColor="@color/lavender" />
 
             <EditText
-                android:id="@+id/intituleFiliere"
+                android:id="@+id/FirstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="00dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Prenom"
+                android:paddingLeft="16dp"
+                android:textColor="@color/lavender" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter votre email"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/lavender" />
+
+            <EditText
+                android:id="@+id/Email"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="0dp"
-                android:background="@drawable/lavendar_border2"
+                android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
-                android:hint="Intitule"
-                android:paddingLeft="15dp"
-                />
+                android:hint="Email"
+                android:paddingLeft="16dp"
+                android:textColor="@color/lavender" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:text="Entrer la date de creation"
-                android:textColor="@color/rouge" />
+                android:text="Entre Date d'inscription"
+                android:textColor="@color/lavender" />
 
             <EditText
                 android:id="@+id/DateInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
-                android:background="@drawable/lavendar_border2"
-                android:focusable="false"
-                android:gravity="start|center_vertical"
-                android:hint="Date"
                 android:padding="14dp"
-                />
+                android:background="@drawable/lavender_border"
+                android:hint="Enter date"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"
+                android:focusable="false" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Select votre Filiere"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:text="Entrer le cordonnateur"
-                android:textColor="@color/rouge" />
+                android:textColor="@color/lavender" />
+
             <Spinner
                 android:id="@+id/spinnerFiliere"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/custom_edittext"
                 android:padding="8dp"
-                android:hint="Cordonnateur"
+                android:hint="Filiere"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:text="Date de creation"
-                android:textColor="@color/rouge" />
-
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <EditText
-                    android:id="@+id/DescriptionFiliere"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/lavender_border"
-                    android:gravity="start|top"
-                    android:hint="Description"
-                    android:padding="15dp"
-                    android:minLines="5"
-                    android:inputType="textMultiLine" />
-
-            </ScrollView>
-
-
-
             <Button
-                android:id="@+id/addButton"
+                android:id="@+id/saveButton"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/lavendar_border2"
-                android:backgroundTint="@color/bleu"
                 android:text="Ajouter"
-                android:textColor="@color/white"
                 android:textSize="18sp"
+                android:background="@drawable/lavender_border"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/bleu"
                 app:cornerRadius="20dp" />
 
         </LinearLayout>

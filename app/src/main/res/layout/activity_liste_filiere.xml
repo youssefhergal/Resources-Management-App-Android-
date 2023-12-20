@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.filiere.ListActivity">
+    tools:context=".ui.filiere.FiliereActivity">
 
     <androidx.appcompat.widget.SearchView
         android:layout_width="match_parent"
@@ -31,6 +31,15 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="-57dp"
         android:scrollbars="vertical" />
+
+    <!-- Add this TextView in your layout -->
+    <TextView
+        android:id="@+id/errorMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
 
     <com.github.clans.fab.FloatingActionButton
         android:id="@+id/addFiliere"

@@ -3,26 +3,25 @@ package com.hergal.studentmnagementapp.model;
 
 
 public class Professeur extends User {
-    private String matiereEnseignee;
 
-//    public Professeur(int id, String nom, String prenom, String identifiant, String motDePasse,
-//                      String matiereEnseignee) {
-//        super(id, nom, prenom, "Professeur", identifiant, motDePasse);
-//        this.matiereEnseignee = matiereEnseignee;
-//    }
+    private String specialite ;
 
-    public String getMatiereEnseignee() {
-        return matiereEnseignee;
+    public Professeur() {
     }
 
-    public void setMatiereEnseignee(String matiereEnseignee) {
-        this.matiereEnseignee = matiereEnseignee;
+
+    public Professeur(int id, String nom, String prenom, String email, String specialite) {
+        super(id, nom, prenom, email);
+        this.specialite = specialite;
     }
 
-    @Override
-    public String toString() {
-        return "Professeur{" +
-                "matiereEnseignee='" + matiereEnseignee + '\'' +
-                '}';
+    public String getSpecialite() {
+        return specialite;
     }
+
+    public void setSpecialite(String specialite) {
+        this.specialite = specialite;
+    }
+
+
 }

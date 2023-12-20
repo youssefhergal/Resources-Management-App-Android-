@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.filiere.AjouterFiliereActivity">
+    tools:context=".ui.filiere.UpdateFiliereActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -28,22 +28,27 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ajouter Filiere"
-                android:textColor="@color/bleu"
+                android:text="Modifier Filiere"
+                android:textColor="@color/rouge"
                 android:textAlignment="center"
-                android:layout_marginTop="20sp"
                 android:textSize="30sp" />
 
-
+            <ImageView
+                android:id="@+id/updateImageFiliere"
+                android:layout_width="244dp"
+                android:layout_height="115dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="00dp"
+                android:src="@drawable/baseline_upload_file_24" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:textColor="@color/rouge"
-                android:text="Entre le Code"
-                />
+                android:text="Code"
+                                           />
 
             <EditText
                 android:id="@+id/CodeFiliere"
@@ -54,7 +59,7 @@
                 android:gravity="start|center_vertical"
                 android:hint="Code"
                 android:paddingLeft="15dp"
-                />
+                 />
 
             <TextView
                 android:layout_width="match_parent"
@@ -62,8 +67,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/rouge"
-                android:text="Entrer l'intitule"
-                />
+                android:text="Intitule"
+                 />
 
             <EditText
                 android:id="@+id/intituleFiliere"
@@ -74,14 +79,14 @@
                 android:gravity="start|center_vertical"
                 android:hint="Intitule"
                 android:paddingLeft="15dp"
-                />
+                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Entrer la date de creation"
+                android:text="Date de creation"
                 android:textColor="@color/rouge" />
 
             <EditText
@@ -92,16 +97,16 @@
                 android:background="@drawable/lavendar_border2"
                 android:focusable="false"
                 android:gravity="start|center_vertical"
-                android:hint="Date"
+                android:hint="Enter date"
                 android:padding="14dp"
-                />
+                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Entrer le cordonnateur"
+                android:text="Filiere"
                 android:textColor="@color/rouge" />
             <Spinner
                 android:id="@+id/spinnerFiliere"
@@ -109,7 +114,7 @@
                 android:layout_height="50dp"
                 android:background="@drawable/custom_edittext"
                 android:padding="8dp"
-                android:hint="Cordonnateur"
+                android:hint="Filiere"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"/>
 
@@ -144,13 +149,13 @@
 
 
             <Button
-                android:id="@+id/addButton"
+                android:id="@+id/updateButton"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/lavendar_border2"
-                android:backgroundTint="@color/bleu"
-                android:text="Ajouter"
+                android:backgroundTint="@color/rouge"
+                android:text="Modifier"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />

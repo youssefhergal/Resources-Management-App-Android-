@@ -11,8 +11,8 @@ import android.widget.Button;
 import com.hergal.studentmnagementapp.R;
 import com.hergal.studentmnagementapp.dao.UserDao;
 import com.hergal.studentmnagementapp.model.User;
-import com.hergal.studentmnagementapp.ui.auth.LoginActivity;
-import com.hergal.studentmnagementapp.ui.auth.SessionManager;
+import com.hergal.studentmnagementapp.ui.authentification.LoginActivity;
+import com.hergal.studentmnagementapp.ui.authentification.SessionManager;
 
 public class MainActivity extends AppCompatActivity {
 

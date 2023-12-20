@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp;
+package com.hergal.studentmnagementapp.ui.student;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.hergal.studentmnagementapp.R;
+
 public class UpdateProfileActivity extends AppCompatActivity {
 
     EditText editNom, editPrenom, editEmail, editDate;
@@ -19,7 +21,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.edit_profile);
+        setContentView(R.layout.student_edit_profile);
 
         editNom = findViewById(R.id.editLastName);
         editPrenom = findViewById(R.id.editFirstName);

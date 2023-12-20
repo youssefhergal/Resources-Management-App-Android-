@@ -7,48 +7,46 @@ public class Filiere {
 
     private int id;
     private String code;
-    private String nom;
+    private String intitule;
     private String description;
-    private byte[] image;
-    private Professeur coordonnateur;
+    private String cordonateur;
 
-    public Filiere(int id, String code, String nom, String description, byte[] image, Professeur coordonnateur) {
-        this.id = id;
-        this.code = code;
-        this.nom = nom;
-        this.description = description;
-        this.image = image;
-        this.coordonnateur = coordonnateur;
-    }
-
-    public Filiere(String code, String nom, String description, byte[] image, Professeur coordonnateur) {
-        this.code = code;
-        this.nom = nom;
-        this.description = description;
-        this.image = image;
-        this.coordonnateur = coordonnateur;
-    }
-
-    public Filiere(int id, String code, String nom, String description, byte[] image, int i) {
-    }
-
-    public byte[] getImage() {
-        return image;
-    }
-
-    public void setImage(byte[] image) {
-        this.image = image;
-    }
-
-    public Professeur getCoordonnateur() {
-        return coordonnateur;
-    }
-
-    public void setCoordonnateur(Professeur coordonnateur) {
-        this.coordonnateur = coordonnateur;
-    }
+    private String date_ouverture;
 
     public Filiere() {
+    }
+
+    public Filiere(int id, String code, String intitule, String description,String cordonateur,String date_ouverture) {
+        this.id = id;
+        this.code = code;
+        this.intitule = intitule;
+        this.description = description;
+        this.cordonateur = cordonateur;
+        this.date_ouverture = date_ouverture;
+    }
+
+    public Filiere(String code, String intitule, String description, String cordonateur, String date_ouverture) {
+        this.code = code;
+        this.intitule = intitule;
+        this.description = description;
+        this.cordonateur = cordonateur;
+        this.date_ouverture = date_ouverture;
+    }
+
+    public String getCordonateur() {
+        return cordonateur;
+    }
+
+    public void setCordonateur(String cordonateur) {
+        this.cordonateur = cordonateur;
+    }
+
+    public String getDate_ouverture() {
+        return date_ouverture;
+    }
+
+    public void setDate_ouverture(String date_ouverture) {
+        this.date_ouverture = date_ouverture;
     }
 
     public String getCode() {
@@ -76,12 +74,12 @@ public class Filiere {
         this.id = id;
     }
 
-    public String getNom() {
-        return nom;
+    public String getIntitule() {
+        return intitule;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setIntitule(String intitule) {
+        this.intitule = intitule;
     }
 
 

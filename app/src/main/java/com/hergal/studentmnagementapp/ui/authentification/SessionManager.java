@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp.ui.auth;
+package com.hergal.studentmnagementapp.ui.authentification;
 
 import android.content.Context;
 import android.content.SharedPreferences;

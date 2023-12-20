@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -9,11 +11,14 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <activity
+            android:name=".MainActivity222"
+            android:exported="false"
+            android:label="@string/title_activity_main222" />
         <activity
             android:name=".ui.home.MainActivity"
             android:exported="true">
@@ -23,43 +28,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.auth.LoginActivity">
-
-        </activity>
-
-        <activity android:name=".ui.home.DashboardActivity">
-
-        </activity>
-
-        <activity  android:name=".ui.filiere.ListActivity">
-
-        </activity>
-
-        <activity android:name=".ui.filiere.DetailActivity">
-
-        </activity>
-        <activity android:name=".ui.home.UpdateActivity">
-
-        </activity>
-
-        <activity android:name=".ui.filiere.AjouterFiliereActivity">
-
-        </activity>
-
-        <activity android:name=".StudentActivity">
-
-        </activity>
-
-        <activity android:name=".StudentProfileActivity">
-
-        </activity>
-
-        <activity android:name=".UpdateProfileActivity">
-
-        </activity>
+        <activity android:name=".ui.authentification.LoginActivity"></activity>
+        <activity android:name=".ui.home.DashboardActivity"></activity>
+        <activity android:name=".ui.filiere.FiliereActivity"></activity>
+        <activity android:name=".ui.filiere.DetailFiliereActivity"></activity>
+        <activity android:name=".ui.filiere.UpdateFiliereActivity"></activity>
+        <activity android:name=".ui.filiere.AjouterFiliereActivity"></activity>
+        <activity android:name=".ui.student.StudentActivity"></activity>
+        <activity android:name=".ui.student.StudentProfileActivity"></activity>
+        <activity android:name=".ui.student.UpdateProfileActivity"></activity>
+        <activity android:name=".ui.student.AjouterStudentActivity" />
     </application>
-
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

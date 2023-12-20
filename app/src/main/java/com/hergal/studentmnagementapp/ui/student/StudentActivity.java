@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp;
+package com.hergal.studentmnagementapp.ui.student;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,12 +7,12 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.clans.fab.FloatingActionButton;
 import androidx.appcompat.widget.SearchView;
 
+import com.hergal.studentmnagementapp.R;
 import com.hergal.studentmnagementapp.model.Etudiant;
 
 import java.util.ArrayList;
@@ -34,10 +34,9 @@ public class StudentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.student_activity_list);
+        setContentView(R.layout.student_activity_liste);
 
         recyclerViewStudent = findViewById(R.id.recyclerViewStudent);
-       // fab = findViewById(R.id.fab);
         searchView = findViewById(R.id.search);
         searchView.clearFocus();
 
@@ -69,14 +68,14 @@ public class StudentActivity extends AppCompatActivity {
             }
         });
 
-      /*  fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(StudentActivity.this, UploadStudentActivity.class);
+                Intent intent = new Intent(StudentActivity.this, AjouterStudentActivity.class);
                 startActivity(intent);
             }
         });
-        */
 
 
 

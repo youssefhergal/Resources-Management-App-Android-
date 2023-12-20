@@ -3,6 +3,14 @@ package com.hergal.studentmnagementapp.model ;
 public class User {
     private int id;
     private String nom;
+
+    public User(int id, String nom, String prenom, String email) {
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+    }
+
     private String prenom;
     private String email ;
     private String password;
@@ -77,6 +85,11 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    @Override
+    public String toString() {
+        return nom + " " +prenom ;
     }
 
     public void setPassword(String password) {

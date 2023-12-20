@@ -7,9 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.hergal.studentmnagementapp.ui.filiere.ListActivity;
+import com.hergal.studentmnagementapp.ui.filiere.FiliereActivity;
 import com.hergal.studentmnagementapp.R;
-import com.hergal.studentmnagementapp.StudentActivity;
+import com.hergal.studentmnagementapp.ui.student.StudentActivity;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -40,7 +40,7 @@ public class DashboardActivity extends AppCompatActivity {
         filierecard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DashboardActivity.this, ListActivity.class);
+                Intent intent = new Intent(DashboardActivity.this, FiliereActivity.class);
                 startActivity(intent);
 
             }

@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp;
+package com.hergal.studentmnagementapp.ui.student;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.hergal.studentmnagementapp.R;
 
 public class EditProfileActivity extends AppCompatActivity {
 
@@ -17,7 +19,7 @@ public class EditProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.student_activity_profile);
 
 
         Button editButton = findViewById(R.id.editButton);

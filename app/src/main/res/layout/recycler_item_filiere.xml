@@ -7,9 +7,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/recCard"
+        android:id="@+id/FiliereCard"
         android:layout_width="392dp"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         app:cardCornerRadius="16dp"
         app:cardElevation="8dp"
         app:cardUseCompatPadding="true">
@@ -21,7 +21,7 @@
             android:weightSum="5.5">
 
             <TextView
-                android:id="@+id/recImage"
+                android:id="@+id/CodeFiliere"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="4"
@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1.5"
-                android:background="@color/white"
+                android:background="@color/lavender"
                 android:weightSum="2">
 
                 <LinearLayout
@@ -46,21 +46,14 @@
                     android:padding="10dp">
 
                     <TextView
-                        android:id="@+id/recTitle"
+                        android:id="@+id/Cordonnateur"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:maxLines="1"
-                        android:text="Title"
-                        android:textColor="@color/bleu"
+                        android:text="Ali Yahayaoui"
+                        android:textColor="@color/white"
                         android:textSize="20sp" />
 
-                    <TextView
-                        android:id="@+id/recDesc"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:maxLines="0"
-                        android:text="Desc"
-                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -71,12 +64,12 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/recLang"
+                        android:id="@+id/DateCreation"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Language"
+                        android:text="2018"
                         android:textAlignment="center"
-                        android:textColor="@color/bleu"
+                        android:textColor="@color/white"
                         android:textSize="18sp" />
 
                 </LinearLayout>

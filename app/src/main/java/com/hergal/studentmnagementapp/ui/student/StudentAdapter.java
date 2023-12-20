@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp;
+package com.hergal.studentmnagementapp.ui.student;
 
 
 import android.content.Context;
@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import com.hergal.studentmnagementapp.R;
 import com.hergal.studentmnagementapp.model.Etudiant;
 
 import java.util.ArrayList;

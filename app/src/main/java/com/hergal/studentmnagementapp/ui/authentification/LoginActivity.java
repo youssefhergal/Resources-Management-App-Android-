@@ -1,4 +1,4 @@
-package com.hergal.studentmnagementapp.ui.auth;
+package com.hergal.studentmnagementapp.ui.authentification;
 
 import androidx.appcompat.app.AppCompatActivity;
 
